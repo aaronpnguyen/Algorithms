@@ -36,7 +36,7 @@
 
 var removeDuplicates = function(nums) {
     if (nums.length == 0) return 0; // Checks if the length is 0, if it is return 0
-    let i = 0; // Pointer initialized as 0, this is the index at which we want to switch our non-duplicat values
+    let i = 0; // Pointer initialized as 0, this is the index at which we want to switch our non-duplicate values
     for (let j = 1; j < nums.length; j++) {
         if (nums[j] !== nums[i]) { // Because we only care from index 0 to n, check if the pointer is not equal to the current index
             i++; // If the pointer is not equal, this means it is a unique value and we can increment our pointer
