@@ -1,3 +1,5 @@
+// This is TwoSum from AlgoExpert
+
 const TwoSum = (array, targetSum) => {
     array.sort((a, b) => a - b); // Sort array
     let left = 0; right = array.length - 1; // Initialize pointers at left and right
