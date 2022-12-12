@@ -37,12 +37,12 @@
     =================================================
 */
 
-function binarySearch(array, target) {
-    let left = 0, right = array.length - 1; // Set up left and right pointer
+function binarySearch(reader, target) {
+    let left = 0, right = reader.length - 1; // Set up left and right pointer
     while (left <= right) {
         const mid = Math.floor((left + right) / 2); // Setting up mid point
-        if (array[mid] == target) return mid; // Return mid point
-        else if (array[mid] < target) left = mid + 1 // Because we know target does not exist at middle, shift left pointer to middle index + 1
+        if (reader[mid] == target) return mid; // Return mid point
+        else if (reader[mid] < target) left = mid + 1 // Because we know target does not exist at middle, shift left pointer to middle index + 1
         else right = mid - 1; // Vice versa from previous step
     }
     return -1
