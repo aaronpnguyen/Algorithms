@@ -98,6 +98,10 @@ let secondSum2 = getSum(secondArrayFunc)
 let thirdArrayFunc = [12, 4, 1, 2]
 let thirdSum2 = getSum(thirdArrayFunc)
 
+// Same results, with and without functions!
+console.log("Sums WITHOUT function:", firstSum1, secondSum1, thirdSum1)
+console.log("Sums WITH function:", firstSum2, secondSum2, thirdSum2)
+
 /*
     What are objects?
 
