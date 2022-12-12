@@ -90,7 +90,7 @@ function getSum(parameter) {
 
 // Now lets repeat what we did earlier, but now with a function!
 let firstArrayFunc = [5, 3, 2]
-let firstSum2 = getSum(firstArrayFunc) // Because we have returned a value, we are able to store and give our variable the sum value we get from the function
+let firstSum2 = getSum(firstArrayFunc) // Because we have returned a value in the function, we are able to store and give our variable the sum value we get from the function
 
 let secondArrayFunc = [10, 12, 6]
 let secondSum2 = getSum(secondArrayFunc)
