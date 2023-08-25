@@ -100,7 +100,8 @@ note for 6 "when c is popped, add its neighbor e"
 note "when the stack is empty, the algorithm is finished"
 ```
 
-> **NOTE** This ultimately prints a, b, d, f, c, e
+> [!NOTE]
+> This ultimately prints a, b, d, f, c, e
 #### Code
 Iteratively: 
 ```js
@@ -131,7 +132,7 @@ const depthFirstPrint = (graph, source) => {
 };
 ```
 
-- Usage notes:
+Usage notes:
 ```js
 // Example of using this for both iteratively and recursively:
 
@@ -210,7 +211,8 @@ class 4 {
 note for 4 "there are no more neighbors, so f is added to the queue and removed in the next iteration"
 note "when the queue is empty, the algorithm is finished"
 ```
-> **NOTE** This ultimately prints a, b, c, d, e, f
+> [!NOTE]
+> This ultimately prints a, b, c, d, e, f
 
 #### Code
 Iteratively:
