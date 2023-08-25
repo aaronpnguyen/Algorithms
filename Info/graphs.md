@@ -110,7 +110,7 @@ const depthFirstPrint = (graph, source) => {
     while (stack.length > 0) {
       const currentNode = stack.pop(); // Removes last index
 
-      console.log(currenntNode);
+      console.log(currentNode);
 
       for (let neighbor of graph[current]) {
         stack.push(neighbor); // Adds to the back of the array
