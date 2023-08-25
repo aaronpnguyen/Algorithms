@@ -100,7 +100,7 @@ note for 6 "when c is popped, add its neighbor e"
 note "when the stack is empty, the algorithm is finished"
 ```
 
-* This ultimately prints a, b, d, f, c, e
+> **NOTE** This ultimately prints a, b, d, f, c, e
 #### Code
 Iteratively: 
 ```js
@@ -131,6 +131,22 @@ const depthFirstPrint = (graph, source) => {
 };
 ```
 
+- Usage notes:
+```js
+// Example of using this for both iteratively and recursively:
+
+const graph = {
+    a: [b, c],
+    b: [d],
+    c: [e],
+    d: [],
+    e: [b],
+    f: [d],
+}
+
+// Source is where we want to start
+depthFirstPrint(graph, 'a');
+``` 
 
 ### Breadth First Traversal
   - Traverse horizontally, meaning that you must traverse through a node's neighbors at the same time before going to the next set of neighbors
@@ -194,7 +210,7 @@ class 4 {
 note for 4 "there are no more neighbors, so f is added to the queue and removed in the next iteration"
 note "when the queue is empty, the algorithm is finished"
 ```
-* This ultimately prints a, b, c, d, e, f
+> **NOTE** This ultimately prints a, b, c, d, e, f
 
 #### Code
 Iteratively:
@@ -212,4 +228,18 @@ const breadthFirstPrint = (graph, source) => {
         };
     };
 };
+
+// Example of using this:
+
+const graph = {
+    a: [b, c],
+    b: [d],
+    c: [e],
+    d: [],
+    e: [b],
+    f: [d],
+}
+
+// Source is where we want to start
+breadthFirstPrint(graph, 'a');
 ```
