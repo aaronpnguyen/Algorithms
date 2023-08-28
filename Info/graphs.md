@@ -225,7 +225,7 @@ const breadthFirstPrint = (graph, source) => {
         
         console.log(currentNode);
 
-        for (let neighbor of graph[currentNode]) {
+        for (const neighbor of graph[currentNode]) {
             queue.push(neighbor); // Adds to end of the array
         };
     };
