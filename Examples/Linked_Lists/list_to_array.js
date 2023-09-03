@@ -21,6 +21,10 @@ b.next = c;
 c.next = d;
 d.next = e;
 
+/********************************/
+/*      Iterative solution      */
+/********************************/
+
 // const listToArray = (head) => {
 //     // Start with an empty array, because we should not have any values yet
 //     let convertedArray = [];
@@ -35,29 +39,32 @@ d.next = e;
 //     return convertedArray;
 // }
 
-// Recursive solution
-const listToArray = (head) => {
-    // Create a "global" array to keep track of the nodes
-    const array = [];
+/********************************/
+/*      Recursive solution      */
+/********************************/
 
-    insertValue(head, array);
+// const listToArray = (head) => {
+//     // Create a "global" array to keep track of the nodes
+//     const array = [];
 
-    return array
-}
+//     insertValue(head, array);
 
-const insertValue = (head, array) => {
-    if (head == null) {
-        return
-    }
+//     return array
+// }
 
-    // Add value into array that is passed in
-    array.push(head.value);
+// const insertValue = (head, array) => {
+//     if (head == null) {
+//         return
+//     }
 
-    // Traversing each node recursively while passing in a version of an array with the previous node
-    insertValue(head.next, array);
+//     // Add value into array that is passed in
+//     array.push(head.value);
 
-    return array
-}
+//     // Traversing each node recursively while passing in a version of an array with the previous node
+//     insertValue(head.next, array);
+
+//     return array
+// }
 
 
 console.log(listToArray(a))
