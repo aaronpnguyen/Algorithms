@@ -79,10 +79,10 @@ const d = new Node('D');
 const e = new Node('E');
 
 // Linking the nodes together
-a.next(b);
-b.next(c);
-c.next(d);
-d.next(e);
+a.next = b;
+b.next = c;
+c.next = d;
+d.next = e;
 ```
 
 - Iterative implementation
