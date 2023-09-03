@@ -35,7 +35,9 @@ d.next = e;
 //     return convertedArray;
 // }
 
+// Recursive solution
 const listToArray = (head) => {
+    // Create a "global" array to keep track of the nodes
     const array = [];
 
     insertValue(head, array);
@@ -51,7 +53,7 @@ const insertValue = (head, array) => {
     // Add value into array that is passed in
     array.push(head.value);
 
-    // Traversing recursively
+    // Traversing each node recursively while passing in a version of an array with the previous node
     insertValue(head.next, array);
 
     return array
