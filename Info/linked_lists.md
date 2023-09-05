@@ -47,7 +47,7 @@ end
 ```
 
 ### Linked Lists vs Arrays
-- Linked lists is a collection of nodes, whereas arrays are a collection of elements
+- Linked lists are a collection of nodes, whereas arrays are a collection of elements
 - Arrays must be contiguous in memory, meaning a system must allocate enough space sequentially for each element
 - Linked lists do not have to be contiguous and the system does not need to allocate space sequentially for the next node
 - An example of how a linked list could perform better:  
