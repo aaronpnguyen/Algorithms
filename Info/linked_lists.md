@@ -56,7 +56,7 @@ To do this, we would either have to move every element after up an index or down
 If we were to do this for a linked lists, we could simply change the node's next value before where we want to insert the node to the new node,
 then point this new node to the previous node's next.
 
-## Link List Traversal
+## Linked List Traversal
 - When accessing a linked list in a function, we would only need to pass in the "head" node of the linked list
     - The reason behind this is because the head contains the value for the next value
 
